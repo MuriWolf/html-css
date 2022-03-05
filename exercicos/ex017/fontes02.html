@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes em css</title>
+    <style>
+        @font-face {
+            font-family: 'Old London';
+            src: url('fonts/OldLondon.ttf') format('truetype'), url('fonts/Olondon_.otf') format('opentype');
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'Cardinal';
+            src: url(fonts/Cardinal.ttf) format('truetype');
+            font-weight: normal;
+        }
+        
+        /* 
+            Tipos de format()
+
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-att (apple advanced typography)
+            - svg
+        */
+
+        h1 {
+            font-family: 'Old London', 'times';
+            font-size: 3em;
+        }
+
+        h2 {
+            font-family: 'Old London';
+            font-size: 2em;
+        }
+
+        p {
+            font-family: 'Cardinal';
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes no CSS</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt deleniti ducimus nostrum eius dolorum. Nesciunt perferendis fuga at pariatur ut, accusamus eos. Recusandae exercitationem earum rerum neque qui quasi laudantium! </p>
+    <h2>Subtítulo 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iusto quia libero amet velit et culpa in quibusdam aliquid optio molestiae, dolor tempore exercitationem aut totam, quidem corrupti. Similique, non! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo commodi magni sint libero nemo quos eaque enim, consequuntur eos ab excepturi saepe voluptatum suscipit natus rem ad dolores delectus. Recusandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, et doloremque fuga necessitatibus maiores repellat nihil excepturi unde dicta ipsa? Est quos doloremque a perferendis pariatur dolorum porro maiores ipsum.</p>
+    <h2>Subtítulo 2</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro molestias illum voluptatum blanditiis illo adipisci reiciendis ut iste laudantium voluptas delectus quasi cupiditate, asperiores dolorum libero veniam? Nihil, dolore minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio pariatur iusto libero ipsum eum aut atque a? Delectus reiciendis accusantium minima, voluptate labore quos, aut, sint reprehenderit voluptatem eligendi illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia facere, esse nesciunt ut quod ab iusto tempora veniam dolores deleniti minima. Modi voluptate tenetur sint provident ea minus. Eaque!</p>
+</body>
+</html>

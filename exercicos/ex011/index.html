@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p-imagem.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m-imagem.png" type="image/png">
+        <img src="imagens/g-imagem.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML</p>
+    <br>
+    <h2>fukashigi no carte</h2>
+    <audio preload="metadata" controls>
+        <source src="midia/fukashigi-no-carte.mp3" type="audio/mpeg">
+        <source src="midia/fukashigi-no-carte.ogg" type="audio/ogg">
+        <source src="midia/fukashigi-no-carte.wav" type="audio/wav"> <!--oss nao é recomendado por ser muito grande--> 
+        <p>Infelizmente o seu navegador não conseguiu reproduzir esse áudio <a href="">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
