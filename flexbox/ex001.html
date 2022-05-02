@@ -25,6 +25,47 @@
             border-radius: 6px;
         }
 
+        .order1 {
+            order: 1;
+        }
+
+        .order2 {
+            order: 2;
+        }
+
+        .order3 {
+            order: 3;
+        }
+
+        .order4 {
+            order: 4;
+        }
+
+        .order-1 {
+            order: -1;
+        }
+
+            
+        .flex-start { align-self: flex-start;
+        }
+
+        .flex-end {
+            align-self: flex-end;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+
         .container1 {
             flex-direction: row;
             flex-wrap: wrap;
@@ -55,6 +96,34 @@
             flex: 1;
         }
 
+        .container5 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container5 > .item {
+            /* flex: 1; */
+            flex-grow: 1;
+            flex-basis: 79px;
+            /* flex-shrink: 0; */
+        }
+
+        .container6 {
+            height: 400px;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        
+        .container6 > .item {
+            width: 100px;
+        }
+
+        .container7 {
+            height: 300px;
+            align-items: flex-end;
+        }
+
     </style>
 </head>
 <body>
@@ -76,7 +145,7 @@
         <div class="item">randomYeah5</div>
     </section>
 
-    <h2>Texto alinhado com o align-items: flex-start</h2>
+    <h2>alinhado com o align-items: flex-start</h2>
     <section class="container container3">
         <div class="item itemEspecial">randomYeah1</div>
         <div class="item">Yeasa sad dsa h2</div>
@@ -85,7 +154,7 @@
         <div class="item">randsasa saasdasa asdasd sdaom Yeah5</div>
     </section>
 
-    <h2>container 4</h2>
+    <h2>Alinhado com o align-content: center</h2>
     <section class="container container4">
         <div class="item">TestandoPalavra1</div>
         <div class="item">Teste 2 do Item</div>
@@ -95,6 +164,35 @@
         <div class="item">Teste 6</div>
         <div class="item">Teste 7</div>
         <div class="item">Teste 8</div>
+    </section>
+
+    <h2>flex grow / flex basis, flex shrink</h2>
+    <section class="container container5">
+        <div class="item">TestandoPalavra1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 4</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 4</div>
+        <div class="item">Teste 6</div>
+    </section>
+
+    <h2>Order</h2>
+    <section class="container container6">
+        <div class="item order4">1</div>
+        <div class="item order-1">2</div>
+        <div class="item">3</div>
+        <div class="item order3">4</div>
+    </section>
+
+    <h2>self-align</h2>
+    <section class="container container7">
+        <div class="item flex-start">1sd asd asd </div>
+        <div class="item stretch">2 adsd asda sd sd </div>
+        <div class="item center " >3sdas dsad  sds</div>
+        <div class="item ">4sds</div>
+        <div class="item ">4 sad sds</div>
+        <div class="item baseline">4sdssaasda</div>
     </section>
 </body>
 </html>
