@@ -1,0 +1,136 @@
+
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(39, 39, 39);
+}
+
+header p, a {
+    color: white;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li, a {
+    display: block;
+    padding: 10px;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+/* css flexbox 1 */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.flex > div > p {
+    text-align: center;
+}
+
+/* css grid 1 */
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.grid1 > div {
+    background-color: rgb(224, 224, 224);
+}
+
+.grid1 > div:nth-child(n + 4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.grid1 > div.anuncio {
+    display: block;
+    grid-column: 1;
+    grid-row: 2 / 5;
+    border: 5px solid red;
+}
+
+@media (max-width: 600px) {
+    .grid1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid1 > div:nth-child(n + 4) {
+        display: block;
+    }
+
+    .grid1 > div.anuncio {
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+    }
+}
+
+/* css grid 2 */
+
+.grid2 {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 275px;
+}
+
+.sidebar {
+    margin-left: 40px;
+}
+
+.sidebar > div {
+    margin-bottom: 20px;
+}
