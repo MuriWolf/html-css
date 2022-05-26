@@ -14,7 +14,7 @@
 
         .grid {
             display: grid;
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
             border: 2px solid black;
         }
@@ -52,22 +52,24 @@
         .grid-template-columns4 {
             grid-template-columns: repeat(auto-fit, minmax(50px, auto));
         }
-
+        
         .grid-template-columns5 {
             grid-template-columns: repeat(auto-fill, minmax(50px, auto));
         }
-
+        
         .grid-template-rows {
             grid-template-columns: 1fr 4fr 1fr;
-
+            
             grid-template-rows: auto 300px;
         }
-
+        
         .grid-template-areas {
+            grid-template-columns: 1fr 4fr 1fr;
+            gap: 10px   ;
             grid-template-areas: 
-            "logo nav nav"
+            "logo    nav     nav"
             "sidebar content advert"
-            "sidebar footer footer" 
+            "sidebar footer  footer" 
             ;
         }
 
@@ -77,6 +79,7 @@
 
         .content {
             grid-area: content;
+            padding: 10px;
         }
 
         .nav {
@@ -89,6 +92,27 @@
 
         .footer {
             grid-area: footer;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        @media (max-width: 600px) {
+            .grid-template-areas {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 40px 50px auto 50px 100px;
+
+
+                grid-template-areas: 
+                "logo logo"
+                "nav nav"
+                "content content"
+                "sidebar sidebar"
+                "advert footer"
+                ;
+
+            }
         }
 
     </style>
@@ -176,7 +200,7 @@
     <section class="grid grid-template-areas">
         <div class="item logo">logo</div>
         <div class="item nav">nav</div>
-        <div class="item content">content</div>
+        <div class="item content">content Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quidem possimus, est earum, error tenetur sed consectetur quisquam nisi amet odio vel. Quaerat non praesentium, quos enim explicabo consequatur voluptas culpa repellendus sed nihil accusamus illum veritatis suscipit possimus magni. Delectus, officia accusamus excepturi dolores nisi adipisci necessitatibus corporis pariatur similique, nam, consectetur fugiat. Impedit voluptate, ratione molestiae aperiam fugit eaque fuga dolor corporis consequatur optio laudantium provident earum veniam omnis quos dolore sit est pariatur inventore explicabo quaerat error voluptas quia assumenda! Nemo id nihil facere sit enim accusantium perferendis vel! Id esse molestiae eveniet in consequuntur delectus debitis?</div>
         <div class="item sidebar">sidebar</div>
         <div class="item advert">advert</div>
         <div class="item footer">footer</div>
