@@ -1,10 +1,7 @@
 body {
     margin-top: 100px;
     margin-bottom: 200px;
-<<<<<<< Updated upstream
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-=======
->>>>>>> Stashed changes
 }
 
 h1 {
@@ -16,10 +13,7 @@ h1 {
     display: grid;
     max-width: 800px;
     margin: 0 auto;
-<<<<<<< Updated upstream
     margin-bottom: 100px;
-=======
->>>>>>> Stashed changes
     border: 2px solid black;
 }
 
@@ -69,10 +63,7 @@ h1 {
 
 .grid-template-areas {
     grid-template-columns: 1fr 4fr 1fr;
-<<<<<<< Updated upstream
     gap: 10px   ;
-=======
->>>>>>> Stashed changes
     grid-template-areas: 
     "logo    nav     nav"
     "sidebar content advert"
@@ -124,7 +115,6 @@ h1 {
 
 .gap {
     grid-template-columns: repeat(3, 1fr);
-<<<<<<< Updated upstream
     grid-auto-rows: 40px;
     gap: 10px;
 }
@@ -329,7 +319,7 @@ grid-auto-rows: 80px;
     z-index: 2;
 
     mix-blend-mode: screen;
-=======
+
     grid-template-rows: repeat(3, 50px);
 
      gap: 10px; /* esse gap esta sendo ignorado devido aos gaps mais especificos abaixo dele */
@@ -372,5 +362,4 @@ grid-auto-rows: 80px;
     grid-auto-flow: column;
     grid-auto-columns: 100px;
     grid-row: 50px 50px;
->>>>>>> Stashed changes
 }
