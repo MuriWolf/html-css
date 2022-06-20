@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+body {
+    background-color: lightblue;
+}
+
+.aviao {
+    height: 100px;
+    width: 250px;
+    top: 40%;
+    position: absolute;
+
+    animation-name: fly;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes fly {
+    /* from {
+        transform: translate(-250px, 0);  
+    } */
+
+    to {
+        transform: translate(calc(100vw - 250px), 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+<body>
+    <img class="aviao" src="https://www.pngarts.com/files/8/Vector-Airplane-Cartoon-PNG-Photo.png"></img>
+</body>
+</html>

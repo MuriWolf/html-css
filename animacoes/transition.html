@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        div {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(51, 51, 202);
+
+            transition-property: background-color, border-radius;
+            transition-duration: 1.5s, .5s;
+            /* transition-delay: 1s; */
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        div:hover {
+            background-color: rgb(179, 75, 211); 
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
