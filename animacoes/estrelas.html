@@ -8,6 +8,7 @@
 
     <style>
         body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin: 0px;
             overflow: hidden;
         }
@@ -20,18 +21,77 @@
             height: 100%;
             content: "";
             position: absolute;
-            animation: ladin 10s ease-in-out infinite alternate ; 
+            top: 0;
+            left: 0;
+            z-index: -1;
+            animation: is-panning 10s ease-in-out infinite alternate ; 
         }
 
+        .l-main {
+            align-items: center;
+            display: flex;
+            height: 60vh;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-        @keyframes ladin {
+        .c-main-title {
+            color: white;
+            font-size: 3rem;
+        }
+
+        .c-main-title > small {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        .c-btn {
+            height: 3rem;
+            width: 10em;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            text-align: center;
+            background-color: rgb(189, 139, 147);
+            color: white;
+            background-color: transparent;
+        }
+
+        .c-btn::before {
+            border: 6px solid rgb(189, 139, 147);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+        }
+
+        .c-btn:hover {
+            animation: is-rippling 2s ease infinite;
+        }
+  
+
+        @keyframes is-panning {
             from {
                 transform: translateX(-50px);
+            }
+        }
+
+        @keyframes is-rippling {
+            to {
+                opacity: 0;
+                transform: scale(1.15, 1.5);
             }
         }
     </style>
 </head>
 <body>
-    
+    <main class="l-main">
+        <h1 class="c-main-title"><small>Curso Completo</small>Animações CSS</h1>
+        <button class="c-btn">Quero Fazer!</button>
+    </main>
 </body>
 </html>
