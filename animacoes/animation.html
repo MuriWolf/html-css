@@ -10,6 +10,7 @@
 
 body {
     background-color: lightblue;
+    overflow-x: hidden;
 }
 
 .aviao {
@@ -18,23 +19,25 @@ body {
     top: 40%;
     position: absolute;
 
-    animation-name: fly;
-    animation-duration: 2s;
+    /* animation-name: fly;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-fill-mode: backwards;
+    animation-fill-mode: backwards; */
+
+    animation: fly 2s linear 0s infinite;
 }
 
 
 @keyframes fly {
-    /* from {
+    from {
         transform: translate(-250px, 0);  
-    } */
+    }
 
     to {
-        transform: translate(calc(100vw - 250px), 0);
+        transform: translate(calc(100vw + 250px), 0);
     }
 }
 
