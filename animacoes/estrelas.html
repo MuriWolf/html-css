@@ -8,7 +8,7 @@
 
     <style>
         body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: sans-serif;
             margin: 0px;
             overflow: hidden;
         }
@@ -54,9 +54,8 @@
             position: relative;
             border: none;
             text-align: center;
-            background-color: rgb(189, 139, 147);
             color: white;
-            background-color: transparent;
+            background-color: rgb(189, 139, 147);
         }
 
         .c-btn::before {
@@ -69,8 +68,8 @@
             content: "";
         }
 
-        .c-btn:hover {
-            animation: is-rippling 2s ease infinite;
+        .c-btn:hover::before {
+            animation: is-rippling 1.5s ease infinite;
         }
   
 
@@ -86,12 +85,29 @@
                 transform: scale(1.15, 1.5);
             }
         }
+
+        @keyframes has-shown {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        .has-shown {
+            animation: has-shown 2s cubic-bezier(0.76, 0, 0.24, 1);
+        }
     </style>
 </head>
 <body>
     <main class="l-main">
-        <h1 class="c-main-title"><small>Curso Completo</small>Animações CSS</h1>
-        <button class="c-btn">Quero Fazer!</button>
+        <h1 class="c-main-title has-shown"><small>Curso Completo</small>Animações CSS</h1>
+        <button class="c-btn has-shown">Quero Fazer!</button>
     </main>
+
 </body>
 </html>
