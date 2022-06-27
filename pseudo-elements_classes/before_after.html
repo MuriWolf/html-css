@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before/after</title>
+    <script src="https://kit.fontawesome.com/cbd566114a.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="fonts/fontawesome-free-6.1.1-web - Copia/css/all.css"> -->
+
+    <style>
+        body {
+            width: 80%;
+            margin: 0 auto;     
+            text-align: center;
+        }
+
+        h2 {
+            color: #a201ff;
+        }
+
+        blockquote::before {
+            content: open-quote;
+            color: #a201ff;
+            font-size: 2em;
+        }
+        blockquote::after {
+            content: close-quote;
+            color: #a201ff;
+            font-size: 2em;
+        }
+
+        a {
+            color: #a201ff;
+        }
+
+        article a[data-cool-tip] {
+            position: relative;
+        }
+
+        article a[data-cool-tip]::after {
+            content: attr(data-cool-tip);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: #a201ff;
+            color: white;
+            padding: 0.5em;
+            white-space: nowrap;
+            border-radius: 6px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            transform: scale(0);
+            transition:
+             transform ease-out .20s,
+             bottom ease-out .15s;
+             ;
+        }
+
+        article a[data-cool-tip]:hover::after {
+            transform: scale(1);
+            bottom: 100%;
+        }
+
+        .section-with-deco::before {
+            display: block;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font: var(--fa-font-solid);
+            content: "\f0e7";
+        }
+
+        a[href^="http"]::after {
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font: var(--fa-font-solid);
+            content: " " "\f08e";
+            font-size: .8em;
+        }
+
+        li {
+            text-align: left;
+        }
+
+        .counters {
+            margin-top: 200px;
+            counter-reset: counter-name;
+        }
+
+        .section { position: relative; display: inline; }
+
+        .section::before {
+            counter-increment: counter-name;
+            content: counter(counter-name) " ";
+            position: absolute;
+            background-color: #a201ff;
+            color: white;
+            height: 1.5em;
+            width: 1.5em;
+            border-radius: 50%;
+            top: -0.15em;
+            left: -2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Radom title</h1>
+        <blockquote>This is a blockquote, where I could have a testimonial talking about how great my services are</blockquote>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nam vitae praesentium neque doloribus laboriosam tenetur, consectetur minima libero ipsam cumque! Dignissimos, cumque quia? Quasi, placeat, enim cum asperiores ipsum eveniet ut minima non dolorum aperiam fugiat distinctio consectetur repellendus.</p>
+        <article>
+            <h2 class="section-with-deco">SECTION TITLE HERE</h2>
+            <p>Pellentesque <a href="" data-cool-tip="Blue is cool">habitant morbi</a> tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <h2 class="section-with-deco">SECTION TITLE HERE</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit <a href="http">amet quam</a> egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <h2 class="section-with-deco">SECTION TITLE HERE</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <h2 class="section-with-deco">SECTION TITLE HERE</h2>
+            <p><a href="http">Pellentesque habitant</a> morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero <a href="http">sit amet</a> quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <h2 class="section-with-deco">SECTION TITLE HERE</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. <a href="http">Donec eu libero</a> sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </article>
+        <div class="counters">
+            <h1>We can number sections!</h1>
+            <h2 class="section">Section title here</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <h2 class="section">Section title here</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <h2 class="section">Section title here</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <h2 class="section">Section title here</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <h2 class="section">Section title here</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <ol>
+              <li>I'm a list item</li>
+              <li>me too!</li>
+              <li>me three</li>
+              <li>Hello there</li>
+            </ol>
+            <ol>
+              <li>I'm a list item</li>
+              <li>me too!</li>
+              <li>me three</li>
+              <li>Hello there</li>
+            </ol>
+          </div>
+    </main>
+      
+</body>
+</html>
