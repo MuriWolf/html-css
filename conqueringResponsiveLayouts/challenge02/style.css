@@ -24,27 +24,24 @@ body {
 }
 
 .container {
-  width: 100%;
-
+  width: 80%;
+  max-width: 750px;
   margin: 0 auto;
+}
+
+.intro {
+  width: 100vw;
   background: #23424a;
   color: white;
   padding: 50px 0;
 }
 
 .intro-content {
-  min-width: 300px;
   width: 50%;
-  text-align: left;
-  margin: 0 auto;
 }
 
-.intro-content > p, h1{
-  max-width: 600px;
-}
-
-.content {
-  min-width: 300px;
-  width: 50%;
+.main-content {
+  width: 80%;
+  max-width: 750px;
   margin: 0 auto;
 }
