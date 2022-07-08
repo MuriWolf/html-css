@@ -1,0 +1,84 @@
+/* 
+    \---- hero ----|
+*/
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero__title {
+    font-size: 6.0rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--brown);
+}
+
+.hero__subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+
+/* 
+    \---- quality designs ----|
+*/
+
+.quality-designs__content {
+    display: flex;
+}
+
+.quality-designs__title {
+    text-align: center;
+    color: var(--brown);
+}
+
+.quality-designs__text {
+    flex: 1;
+}
+
+.quality-designs__text + .quality-designs__text {
+    margin-left: 4rem;
+}
+
+/* 
+    \---- made custom for you ----|
+*/
+
+.made-custom-for-you__content {
+    margin-right: 4rem;
+    flex: 1;
+}
+
+.made-custom-for-you__title {
+    color: white;
+}
+
+.made-custom-for-you__text {
+    color: var(--clear-text);
+}
+
+.made-custom-for-you__img {
+    flex: 1;
+}
+
+/* 
+    \---- created with care ----|
+*/
+
+.created-with-care__title {
+    color: white;
+}
+
+.created-with-care__text {
+    color: var(--clear-text);
+}
+
+.created-with-care__content {
+    flex: 1;
+    margin-left: 4rem;
+}
+
+.created-with-care__img {
+    flex: 1;
+}

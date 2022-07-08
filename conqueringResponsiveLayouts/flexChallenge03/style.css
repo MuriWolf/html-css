@@ -1,0 +1,130 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    --light-gray: rgb(212, 212, 212);
+    --dark-gray: rgb(77, 77, 77);
+
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4.8rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+p {
+    color: var(--dark-gray);
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    /* display: flex => flex container */
+    display: flex;
+    justify-content: space-between;
+    
+    /* can't use yet */
+    /* gap: 100px; */
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
+
+.hero__text { 
+    width: 62%;
+}
+
+.hero__text p {
+    color: var(--light-gray);
+}
+
+.hero__img {
+    width: 32%;
+    align-self: flex-start;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
+.l-about {
+    margin: 40px auto;
+}
+
+.about__info {
+    width: 62%;
+}
+
+.about__info > h2 {
+    color: #136C72;
+}
+
+.about__qualities {
+    width: 32%;
+    align-self: flex-start;
+    background-color: #136C72;
+    padding: 1.6rem;
+}
+
+.about__qualities__quality {
+    color: white;
+    text-align: center;
+}
+
+.about__qualities__quality > p {
+    color: var(--light-gray);
+}

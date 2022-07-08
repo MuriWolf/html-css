@@ -1,0 +1,29 @@
+@import url('base.css');
+
+.l-hero {
+    background-color: var(--pale-yellow);
+    text-align: center;
+    min-height: 660px;
+
+    display: flex;
+    align-items: center;
+}
+
+.l-container {
+    max-width: 1128px;
+    margin: 0 auto;
+    width: 80%;
+    /* background-color: rgb(255, 194, 194); */
+}
+
+.l-quality-designs {
+    background-color: #FFF;
+}
+
+.l-made-custom-for-you {
+    background-color: var(--dark-gray);
+}
+
+.l-created-with-care {
+    background-color: var(--brown);
+}

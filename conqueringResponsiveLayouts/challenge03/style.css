@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 html {
     font-size: 62.5%;
 }
@@ -8,17 +7,38 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 2.1rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+.hero {
+    margin: 0;
+    background-color: #23424A;
+    padding: 140px 0px; 
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 140px 0;
 }
 
 .l-wrapper {
-    margin: 0;
-    background-color: #23424A;
-    padding: 110px 40px; 
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .wrapper__content {
-    width: 50%;
-    max-width: 750px;
+    width: 60%;
 }
 
 .wrapper__title {
@@ -28,21 +48,44 @@ body {
 }
 
 .wrapper__text {
-    color: white;
+    color: rgb(197, 197, 197);
     font-size: 2.1rem;
     margin-bottom: 3em;
 } 
 
 .wrapper__btn {
     text-transform: uppercase;
-    border: none;
+    display: inline-block;
     color: #23424A;
     background-color: #38CFD9;
     font-weight: bold;
     font-size: 2.1rem;
-    padding: 0.7em 1.5em;
+    padding: 0.7em 2em;
     border-radius: 1.5em;
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
+
+.wrapper__btn:hover {
+    transform: scale(1.075);
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+}
+
+.col + .col {
+    margin-left: 40px;
+}
+
+.col > p {
+    color: rgb(68, 68, 68);
+}
+
 
 @media (max-width: 590px) {
     html {

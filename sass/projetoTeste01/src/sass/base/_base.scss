@@ -1,0 +1,34 @@
+@use '../abstract/_variables';
+
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 62.5%;
+    --mainColor: #5b1583;
+}
+
+body {
+    @include flexCenter(column);
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--mainColor);
+}
+
+p {
+    color: variables.$mainTextColor--dark;
+    font-size: 1.8rem;
+}
