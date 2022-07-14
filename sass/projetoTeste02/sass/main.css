@@ -1,0 +1,38 @@
+body {
+  box-sizing: border-box;
+}
+
+p {
+  color: #303030;
+  font-size: 16px;
+}
+
+.container {
+  width: 80%;
+  height: 10em;
+  margin: 0 auto;
+  background-color: #e36931;
+  padding: 20px;
+}
+@media (max-width: 900px) {
+  .container {
+    background-color: #41a8e3;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    background-color: #f89aeb;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    background-color: #9af8a7;
+  }
+}
+
+@media (max-width: 900px) {
+  p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

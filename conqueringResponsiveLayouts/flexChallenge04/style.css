@@ -151,3 +151,20 @@ header {
     color: #fff;
     background-color: #136c72;
 }
+
+@media (max-width: 600px) {
+    .container {
+        display: block;
+    }
+    
+    .hero__text,
+    .primary-content,
+    .sidebar,
+    .hero__img {
+        width: 100%;
+    }
+
+    .hero__img {
+        margin-top: 2em;
+    }
+}

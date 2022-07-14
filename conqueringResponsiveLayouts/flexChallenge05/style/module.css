@@ -1,19 +1,19 @@
 /* 
-    \---- hero ----|
+    \---- intro ----|
 */
 
-.hero-content {
+.intro-content {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.hero__title {
+.intro__title {
     font-size: 6.0rem;
     font-family: 'Playfair Display', serif;
     color: var(--brown);
 }
 
-.hero__subtitle {
+.intro__subtitle {
     font-size: 1.8rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -81,4 +81,18 @@
 
 .created-with-care__img {
     flex: 1;
+}
+@media (max-width: 800px) {
+    .quality-designs__content {
+        display: block;
+    }
+
+    .created-with-care__content,
+    .quality-designs__text + .quality-designs__text {
+        margin-left: 0em    ;
+    }
+
+    img, p {
+        margin-top: 2em;
+    }
 }

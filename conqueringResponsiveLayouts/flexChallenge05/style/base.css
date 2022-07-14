@@ -9,10 +9,13 @@ html {
     --clear-text: #e0e0e0;
     --brown: #824936;
     --pale-yellow: #F3EED9;
+
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Playfair Display', serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
     font-weight: 400;
 }
 
@@ -25,7 +28,7 @@ body {
 
 h2 {
     font-size: 3.6rem;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--secondary-font);
     margin-bottom: 0.8em;
 }
 
@@ -45,4 +48,10 @@ section {
 .flex {
     display: flex;
     /* justify-content: space-between; */
+}
+
+@media (max-width: 800px) {
+    .flex {
+        display: block;
+    }   
 }

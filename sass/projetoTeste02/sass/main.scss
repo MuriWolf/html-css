@@ -1,0 +1,47 @@
+@use './breakpoints' as brPo;
+$main-color: #41a8e3;
+$font-size: 16px;
+body {
+    box-sizing: border-box;
+}
+
+p {
+    color: #303030;
+    font-size: $font-size;
+}
+
+
+
+.container {
+    width: 80%;
+    height: 10em;
+    margin: 0 auto;
+    background-color: #e36931;
+    padding: 20px;
+
+    @include brPo.for-size(large) {
+        // $main-color: #20ce10;
+        background-color: $main-color;
+    }
+
+    @include brPo.for-size(medium) {
+        background-color: #f89aeb;
+        width: 100%;
+    }
+
+    @include brPo.for-size(small) {
+        background-color: #9af8a7;
+    }
+}
+
+@include brPo.for-size(large) {
+    body {
+        // background-color: #9af8f3;
+    }
+    p {
+        $font-size: 20px;
+        font-size: $font-size;
+    }
+}
+
+

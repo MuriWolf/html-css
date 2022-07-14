@@ -1,6 +1,6 @@
 @import url('base.css');
 
-.l-hero {
+.l-intro {
     background-color: var(--pale-yellow);
     text-align: center;
     min-height: 660px;
@@ -13,7 +13,6 @@
     max-width: 1128px;
     margin: 0 auto;
     width: 80%;
-    /* background-color: rgb(255, 194, 194); */
 }
 
 .l-quality-designs {
@@ -26,4 +25,8 @@
 
 .l-created-with-care {
     background-color: var(--brown);
+}
+
+@media (max-width: 800px) {
+    
 }
