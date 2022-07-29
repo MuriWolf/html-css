@@ -7,8 +7,22 @@
 .btn {
     all: initial;
     margin-top: 2em;
-    background-color: rgb(240, 140, 140);
+    background-color: #817c7c;
     padding: 0.5em 0.5em;
+    cursor: pointer;
+}
+
+.close-btn {
+    all: initial;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    padding: 15px;
+    background: #a5a2a2;
+    border: 4px solid white;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    font-family: sans-serif;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -31,11 +45,26 @@
 }
 
 .modal {
+    position: relative;
     background-color: white;
     height: 200px;
     width: 90%;
     max-width: 300px;
     padding: 40px;
-    border: 10px solid red;
+    border: 10px solid #817c7c;
+    /* transition: all 0.5s; */
     box-shadow: 0 0 0 10px white;
+    animation: modal 0.5s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate(0, -100vh);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
