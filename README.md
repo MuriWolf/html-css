@@ -1,5 +1,7 @@
-# html-css
- Curso de HTML5 e CSS3  do CursoemVideo
+# HMTL5 e CSS3
+ 
+![wp2742499](https://user-images.githubusercontent.com/83728277/189271930-58a3cc3d-9136-49bf-b9c5-e1afc3021d7c.jpg)
 
-<a href="https://muriwolf.github.io/html-css/exercicios/ex001/">Executar o exercício 001</a>
-<a href="https://muriwolf.github.io/html-css/exercicios/ex021/caixa01.html">Executar o exercício 021</a>
+## Descrição/description
+
+Esse repositório está armazenado meus estudos de HTML e CSS.
