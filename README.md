@@ -4,4 +4,6 @@
 
 ## Descrição/description
 
-Esse repositório está armazenado meus estudos de HTML, CSS e SASS/SCSS. Aqui estão desde cursos que faço até projetos e estudos específicos. 
+Esse repositório está armazenado meus estudos de HTML, CSS e SASS/SCSS. 
+
+Aqui estão desde cursos que faço até projetos e estudos específicos. 
