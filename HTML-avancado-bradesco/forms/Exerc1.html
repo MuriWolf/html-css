@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para cadastro</title>
+    <style>
+        h1 {
+            color: rgb(78, 117, 243);
+            font-size: 1.6rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário para cadastro</h1>
+    <form action="mailto:murillop.o06@gmail.com">
+        <table cellspacing="4">
+            <tr>
+                <td><label for="nome">Nome</label></td>
+                <td><input type="text" name="nome" id="nome"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Sexo</td>
+                <td>
+                    <input type="radio" name="sexo" id="f" value="f">
+                    <label for="f">Feminino</label>
+                    <input type="radio" name="sexo" id="m" value="m">
+                    <label for="m">Masculino</label>
+                </td>
+            </tr>
+            <tr>   
+                <td><label for="rg">RG</label></td>
+                <td><input type="text" name="rg" id="rg"></td>
+            </tr>
+            <tr>
+                <td><label for="cpf">CPF</label></td>
+                <td><input type="number" name="cpf" id="cpf"></td>
+            </tr>
+            <tr>
+                <td><label for="login">Login</label></td>
+                <td><input type="text" name="login" id="login"></td>
+            </tr>
+            <tr>
+                <td><label for="senha">Senha</label></td>
+                <td><input type="password" name="senha" id="senha"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar"></td>
+                <td><input type="reset" value="Limpar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
